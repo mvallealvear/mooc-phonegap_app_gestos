@@ -1,4 +1,7 @@
-# A Blank PhoneGap App
+# A simple PhoneGap App
+
+    Simple example to test a recognition of gestures mobile app.
+    This code use FastClick & HammerJS libreries.
 
 ## Usage
 
