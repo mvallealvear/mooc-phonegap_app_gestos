@@ -60,6 +60,11 @@ var app = {
                 document.querySelector( '#info' ).innerHTML = ev.type + '!';
             }
         } );
+
+        hammertime.on( 'tap', function ( ev ) {
+            zona.className = 'tap';
+            document.querySelector( '#info' ).innerHTML = ev.type + '!';
+        } );
     },
 
     ponloClaro: function () {

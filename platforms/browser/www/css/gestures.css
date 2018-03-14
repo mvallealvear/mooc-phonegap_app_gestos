@@ -3,10 +3,14 @@ body{
 }
 
 body.claro{
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 1.5s;
     background-color: #8de1bd;
 }
 
 body.oscuro{
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 1.5s;
     background-color: #577a76;
 }
 
@@ -28,8 +32,9 @@ button{
     display: block;
 }
 
-h1 #info{
+h1#info{
     width: 100%;
+    text-align: center;
 }
 
 #info{
@@ -57,6 +62,10 @@ h1 #info{
 
 #zona-gestos.rotate{
     -webkit-animation: rotate 3s 1;
+}
+
+#zona-gestos.tap{
+    -webkit-animation: tocar 100ms 1;
 }
 
 @-webkit-keyframes pulsacion{
@@ -98,5 +107,14 @@ h1 #info{
 @-webkit-keyframes rotate{
     100%{
         -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes tocar{
+    0%, 100%{
+        background-color: #7fba67;
+    }
+    50%{
+        background-color: yellow;
     }
 }
